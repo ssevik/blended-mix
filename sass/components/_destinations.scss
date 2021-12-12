@@ -1,0 +1,102 @@
+.destinations {
+    margin-top: 294px;
+
+    &__box {
+        margin-bottom: 231px;
+        @extend .container;
+        position: relative;        
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap {
+        position: relative;
+    }
+    &__title {
+        font-family: 'Playfair Display', serif;
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.38;
+        margin-bottom: 56px;
+
+        &--box {
+            display: flex;
+        }
+    }
+    &__img {
+        border-radius: 8px;
+        border: transparent;
+
+        transition: box-shadow 300ms linear;
+    }
+    &__link {
+        margin-left: auto;
+
+        color: $acent-color;
+        font-weight: 600;
+        line-height: 3.5;
+
+        transform: scale(1);
+        transition: transform 300ms linear;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
+
+        &:hover .destinations__img,
+        &:focus .destinations__img{
+            box-shadow: 3px 10px 12px 0px rgba(23, 53, 26, 0.14), 
+        12px 15px 29px 0px rgba(34, 60, 80, 0.2);
+        }
+        &--icon {
+            color: $acent-color;
+            margin-left: 11px;
+        }
+
+    }
+
+    &__text {
+        position: absolute;
+        display: block;
+        width: 120px;
+        padding-top: 11px;
+        padding-bottom: 5px;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px 6px 0px 0px;
+
+        color: $dest-title-color;
+        background-color: $light-color;
+        font-style: 17px;
+        font-weight: 600;
+        line-height: 1.47;
+    }
+    &__span {
+        color: $dest-text-color;
+        font-style: 16px;
+    }
+
+    &__cross,
+    &__circle {
+        position: absolute;
+    }
+
+    &__cross {
+        top: 300px;
+        left: -96.5px;
+        rotate: -7.5%;
+
+        fill: $cross-color;
+    }
+    &__circle {
+        top: -10px;
+        left: 930px;
+
+        fill: aquamarine;
+        // fill: linear-gradient(156.14deg, #BFF0DD 12.18%, #57D2A3 87.99%);
+
+    }
+}
