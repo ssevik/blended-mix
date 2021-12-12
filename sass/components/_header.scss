@@ -1,0 +1,57 @@
+.header {
+  padding-top: 45px;
+  padding-bottom: 114px;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-site {
+  display: flex;
+  margin-left: 515px;
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.nav-site__link {
+  color: $nav-text-color;
+
+  font-size: 16px;
+  line-height: 1.18;
+
+  transition: color 300ms $animation-cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+  }
+}
+
+.registration {
+  display: flex;
+  margin-left: auto;
+}
+
+.registration__item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.registration__link {
+  min-width: 132px;
+  min-height: 44px;
+
+  @include btn;
+}

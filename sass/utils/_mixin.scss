@@ -1,0 +1,24 @@
+@mixin btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $acent-color;
+  color: $btn-text-color;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.8;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  transition: color 300ms $animation-cubic-bezier, border 300ms $animation-cubic-bezier,
+    background-color 300ms $animation-cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $acent-color;
+    border: 1px solid $acent-color;
+  }
+}
