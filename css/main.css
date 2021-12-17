@@ -559,4 +559,132 @@ button {
   right: -90px;
   top: -40px;
 }
+
+.direction {
+  margin-top: 213px;
+  position: relative;
+  padding-bottom: 271px;
+  padding-top: 55px;
+}
+
+.direction::before {
+  content: "";
+  position: absolute;
+  left: -76px;
+  top: 403px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/svg-circle.svg);
+}
+
+.direction::after {
+  content: "";
+  position: absolute;
+  left: 404px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/svg-plus.svg);
+}
+
+.direction__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 446px;
+  width: 266px;
+  border-radius: 8px;
+}
+
+.direction__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.direction__caption {
+  position: relative;
+  margin-bottom: 56px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.39;
+  color: #202336;
+}
+
+.direction__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.direction__list::after {
+  content: "";
+  position: absolute;
+  right: 366px;
+  bottom: -55px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/svg-circle.svg);
+}
+
+.direction__link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 3.53;
+  color: #fb8f1d;
+}
+
+.direction__all {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.87;
+  color: #fb8f1d;
+}
+
+.direction__title {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1.58;
+  margin-bottom: 13px;
+  color: #202336;
+}
+
+.direction__excerpt {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #7d7987;
+  margin-bottom: 23px;
+}
+
+.direction__box {
+  position: relative;
+  margin-right: 20px;
+}
+
+.direction__image {
+  display: block;
+  overflow: hidden;
+  width: 261px;
+  height: 330px;
+  border-radius: 8px;
+}
+
+.item__wrap {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 231px;
+}
 /*# sourceMappingURL=main.css.map */
