@@ -565,18 +565,19 @@ button {
   background-color: #F9F9FB;
 }
 
-.footer-flex {
+.footer__flex {
+  padding-top: 77px;
+  padding-bottom: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 77px;
 }
 
 .footer__start {
-  margin-top: 74px;
+  max-width: 391px;
 }
 
 .footer__start .footer__logo {
@@ -586,6 +587,7 @@ button {
 }
 
 .footer__start .footer__item {
+  padding-right: 80px;
   font-style: normal;
   font-size: 18px;
   line-height: 1.56;
@@ -597,10 +599,6 @@ button {
   font-size: 17px;
   line-height: 1.65;
   color: #848484;
-}
-
-.footer__center {
-  margin-top: 66px;
 }
 
 .footer__center .footer__item {

@@ -4,14 +4,15 @@
     background-color: $background-color;
 }
 
-.footer-flex {
+.footer__flex {
+    padding-top: 77px;
+    padding-bottom: 77px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 77px;
 }
 
 .footer__start {
-    margin-top: 74px;
+    max-width: 391px;
     & .footer__logo {
     width: 44px;
     height: 44px;
@@ -19,6 +20,7 @@
     }
 
     .footer__item {
+        padding-right: 80px;
         font-style: normal;
         font-size: 18px;
         line-height: 1.56;
@@ -34,7 +36,6 @@
 }
 
 .footer__center {
-    margin-top: 66px;
     & .footer__item {
         position: relative;
         font-size: 19px;
