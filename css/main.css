@@ -643,4 +643,126 @@ button {
   width: 25px;
   height: 20px;
 }
+
+.guides {
+  padding-top: 170px;
+  padding-bottom: 250px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid tomato; */
+}
+
+.guides-describe {
+  margin-right: auto;
+  margin-left: 0;
+  width: 460px;
+  height: 303px;
+}
+
+.guides-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guides-title {
+  margin-bottom: 20px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.39;
+  color: var(--main-title-color);
+}
+
+.guides-text {
+  margin-bottom: 33px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+.guides-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 164px;
+  height: 48px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 3.75;
+  color: var(--main-button-color);
+  background: var(--accent-button-color);
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.guides-btn:hover,
+.guides-btn:focus {
+  color: var(--accent-button-color);
+  background: var(--main-button-color);
+  border: 1px solid var(--accent-button-color);
+}
+
+.guides-icon3 {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  -webkit-transform: translate(70px);
+          transform: translate(70px);
+  border: transparent;
+  border-radius: 50%;
+  outline: none;
+}
+
+.guides-icon2 {
+  position: absolute;
+  bottom: 180px;
+  left: 490px;
+  border: transparent;
+  border-radius: 50%;
+  outline: none;
+}
+
+.guides-icon {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  border: transparent;
+  outline: none;
+  border-radius: 50%;
+  outline: none;
+  background: linear-gradient(156.14deg, #bff0dd 12.18%, #57d2a3 87.99%);
+}
+
+.guides-img {
+  width: 600px;
+  height: 540px;
+}
 /*# sourceMappingURL=main.css.map */
