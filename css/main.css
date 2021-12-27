@@ -643,4 +643,65 @@ button {
   width: 25px;
   height: 20px;
 }
+
+.picture-section {
+  margin-top: 262px;
+  margin-bottom: 173px;
+}
+
+.picture-top__title {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3888;
+  color: #000000;
+}
+
+.picture-top__link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 3.5294;
+  margin-right: 22px;
+  color: #fb8f1d;
+}
+
+.picture-top__link::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 99.5%;
+  width: 6px;
+  height: 11px;
+  background-image: url(../images/pic-link.svg);
+}
+
+.picture-top__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.picture-bottom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.picture-bottom__item {
+  position: relative;
+}
+
+.picture-bottom__text {
+  position: absolute;
+  bottom: -2%;
+  left: 1%;
+}
 /*# sourceMappingURL=main.css.map */

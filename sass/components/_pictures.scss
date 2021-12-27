@@ -3,7 +3,40 @@
   margin-bottom: 173px;
 }
 
+.picture-top__title {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3888;
+
+  color: $text-item-color;
+}
+
+.picture-top__link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 3.5294;
+
+  margin-right: 22px;
+
+  color: $acent-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 40%;
+    left: 99.5%;
+
+    width: 6px;
+    height: 11px;
+
+    background-image: url(../images/pic-link.svg);
+  }
+}
+
 .picture-top__box {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
@@ -22,4 +55,5 @@
 .picture-bottom__text {
   position: absolute;
   bottom: -2%;
+  left: 1%;
 }
