@@ -1,0 +1,25 @@
+.picture-section {
+  margin-top: 262px;
+  margin-bottom: 173px;
+}
+
+.picture-top__box {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 56px;
+}
+
+.picture-bottom__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture-bottom__item {
+  position: relative;
+}
+
+.picture-bottom__text {
+  position: absolute;
+  bottom: -2%;
+}
