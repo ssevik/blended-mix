@@ -646,7 +646,6 @@ button {
   height: 20px;
 }
 
-
 .picture-section {
   position: relative;
   min-height: 510px;
@@ -712,34 +711,10 @@ button {
 }
 
 .picture-top__box {
-
-.guides {
-  padding-top: 170px;
-  padding-bottom: 250px;
-}
-
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 2px solid tomato; */
-}
-
-.guides-describe {
-  margin-right: auto;
-  margin-left: 0;
-  width: 460px;
-  height: 303px;
-}
-
-.guides-container {
-
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -796,9 +771,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: -2%;
-  left: 1%;
-
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -894,6 +866,5 @@ button {
 .guides-img {
   width: 600px;
   height: 540px;
-
 }
 /*# sourceMappingURL=main.css.map */
