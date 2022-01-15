@@ -287,7 +287,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin: 0;
+  color: #000000;
+}
+
 p {
   margin: 0;
 }
@@ -642,10 +646,33 @@ button {
   height: 20px;
 }
 
-
 .picture-section {
+  position: relative;
+  min-height: 510px;
   margin-top: 262px;
-  margin-bottom: 173px;
+  padding-bottom: 61px;
+}
+
+.picture-section::before {
+  content: "";
+  position: absolute;
+  top: 310px;
+  left: -100px;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(7.49deg);
+          transform: rotate(7.49deg);
+  background-image: url(../images/plus-bg.svg);
+}
+
+.picture-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 44.5%;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/circle-min-bg.svg);
 }
 
 .picture-top__title {
@@ -653,7 +680,6 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.3888;
-  color: #000000;
 }
 
 .picture-top__link {
@@ -662,6 +688,16 @@ button {
   line-height: 3.5294;
   margin-right: 22px;
   color: #fb8f1d;
+}
+
+.picture-top__link::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 178px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/circle-min-bg.svg);
 }
 
 .picture-top__link::after {
@@ -675,6 +711,40 @@ button {
 }
 
 .picture-top__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.picture-bottom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.picture-bottom__item {
+  position: relative;
+}
+
+.picture-bottom__text {
+  position: absolute;
+  bottom: -1%;
+  left: 0%;
+}
+
+.picture-bottom__text h3 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4705;
+}
 
 .guides {
   padding-top: 170px;
@@ -697,36 +767,10 @@ button {
 }
 
 .guides-container {
-
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 56px;
-}
-
-.picture-bottom__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.picture-bottom__item {
-  position: relative;
-}
-
-.picture-bottom__text {
-  position: absolute;
-  bottom: -2%;
-  left: 1%;
-
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -822,6 +866,5 @@ button {
 .guides-img {
   width: 600px;
   height: 540px;
-
 }
 /*# sourceMappingURL=main.css.map */
